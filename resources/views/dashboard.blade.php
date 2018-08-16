@@ -20,6 +20,8 @@
 
 @section('title')
 
+<!-- Dashboard-->
+
   <h1 style="margin:20px; font-size:20px; color:#EDEDED;">DASHBOARD</h1>
 
 @endsection

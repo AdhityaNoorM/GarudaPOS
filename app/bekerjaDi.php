@@ -10,16 +10,19 @@ use Illuminate\Database\Eloquent\Model;
  * @property User $user
  * @property Outlet $outlet
  */
+<<<<<<< HEAD
 
 
  //test-push Adhitya// 
  //test-branching Adhitya//
 
+=======
+>>>>>>> master
 class bekerjaDi extends Model
 {
     /**
      * The table associated with the model.
-     *
+     * 
      * @var string
      */
     protected $table = 'bekerja';
