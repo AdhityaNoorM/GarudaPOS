@@ -12,7 +12,8 @@ use Illuminate\Database\Eloquent\Model;
  */
 
 
- //test-push Adhitya//
+ //test-push Adhitya// 
+ //test-branching Adhitya//
 
 class bekerjaDi extends Model
 {
