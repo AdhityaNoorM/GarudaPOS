@@ -13,6 +13,7 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+    <!-- Fix for bugged data table -->
     <link href="../assets/build/css/table-fix.css" rel="stylesheet">
 
     <!--data table-->
