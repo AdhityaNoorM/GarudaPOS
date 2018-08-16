@@ -1,30 +1,47 @@
-@extends('template')
-
-@section('link')
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>GarudaPOS | Dashboard </title>
 
-    <!-- Bootstrap -->
-    <link href="../assets/vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="../assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="../assets/vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- bootstrap-daterangepicker -->
-    <link href="../assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+            @include('link.dashboard')
 
-    <!-- Custom Theme Style -->
-    <link href="../assets/build/css/custom.min.css" rel="stylesheet">
+  </head>
 
-@endsection
+  <body class="nav-md footer_fixed">
 
-@section('title')
+    <!----- Template ----->   
 
-  <h1 style="margin:20px; font-size:20px; color:#EDEDED;">DASHBOARD</h1>
+            @include('template.first')
 
-@endsection
+            <a href="/" class="site_title"><i class="fa fa-paw"></i>
+            <span>
 
-@section('content')
+
+        <!-- Insert Company Here -->   GarudaPOS   <!-- /Insert Company Here -->
+
+              
+            </span></a>          
+            </div> <div class="clearfix"></div> <br>
+
+            @include('template.second')
+
+              <li class=""><h1 style="margin:20px; font-size:20px; color:#EDEDED;">
+
+            
+        <!-- Insert Page Name Here -->   DASHBOARD   <!-- Insert Page Name Here -->
+
+            
+              </h1></li> </ul>
+
+            @include('template.third')    
+
+    <!----- /Template ----->         
 
         <!-- page content -->
         <br><br><div class="right_col" role="main">
@@ -108,45 +125,21 @@
                 </div>
               </div>
             </div>
+
+
+
+            
             </div>
           </div>
         </div>
         <!-- /page content -->
 
-@endsection
+            @include('template.fourth')
 
+      </div>
+    </div>
 
-@section('script')
+            @include('script.dashboard')
 
-    <!-- jQuery -->
-    <script src="../assets/vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Bootstrap -->
-    <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
-    <!-- FastClick -->
-    <script src="../assets/vendors/fastclick/lib/fastclick.js"></script>
-    <!-- NProgress -->
-    <script src="../assets/vendors/nprogress/nprogress.js"></script>
-    <!-- Chart.js -->
-    <script src="../assets/vendors/Chart.js/dist/Chart.min.js"></script>
-    <!-- jQuery Sparklines -->
-    <script src="../assets/vendors/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
-    <!-- Flot -->
-    <script src="../assets/vendors/Flot/jquery.flot.js"></script>
-    <script src="../assets/vendors/Flot/jquery.flot.pie.js"></script>
-    <script src="../assets/vendors/Flot/jquery.flot.time.js"></script>
-    <script src="../assets/vendors/Flot/jquery.flot.stack.js"></script>
-    <script src="../assets/vendors/Flot/jquery.flot.resize.js"></script>
-    <!-- Flot plugins -->
-    <script src="../assets/vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
-    <script src="../assets/vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
-    <script src="../assets/vendors/flot.curvedlines/curvedLines.js"></script>
-    <!-- DateJS -->
-    <script src="../assets/vendors/DateJS/build/date.js"></script>
-    <!-- bootstrap-daterangepicker -->
-    <script src="../assets/vendors/moment/min/moment.min.js"></script>
-    <script src="../assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
-    
-    <!-- Custom Theme Scripts -->
-    <script src="../assets/build/js/custom.min.js"></script>
-
-@endsection
+  </body>
+</html>

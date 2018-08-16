@@ -1,95 +1,4 @@
-@extends('template')
-
-@section('link')
-
-    <title>GarudaPOS | Produk </title>
-
-    <!-- Bootstrap -->
-    <link href="../assets/vendors/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link href="../assets/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- NProgress -->
-    <link href="../assets/vendors/nprogress/nprogress.css" rel="stylesheet">
-    <!-- bootstrap-daterangepicker -->
-    <link href="../assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet"> 
-
-     <!-- custom table (fixed) -->
-    <link href="css/custom_table.css" rel="stylesheet">
-
-    <!--data table-->
-    <link href="https://cdn.datatables.net/select/1.2.6/css/select.dataTables.min.css" rel="stylesheet" >
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/fixedcolumns/3.2.6/css/fixedColumns.bootstrap.min.css">
-    <!-- Custom Theme Style -->
-    <link href="../assets/build/css/custom.min.css" rel="stylesheet">
-
-@endsection
-
-@section('title')
-
-  <h1 style="margin:20px; font-size:20px; color:#EDEDED;">PRODUK</h1>
-
-@endsection
-
-@section('content')
-
-        <!-- page content -->
-        <div class="right_col" role="main">
-          
-
-            <div class="clearfix"></div>
-
-            <div class="row">
-              <div class="col-md-12 col-sm-12 col-xs-12">
-                <div class="x_panel">
-                  <div class="x_title">
-                    <div class="clearfix"></div>
-                  </div>
-                  <div class="x_content"><br>
-                    <a data-toggle="modal" href="tambah_produk.html" class="btn btn-success btn-lg" style="width:100%"><b>+Tambahkan Produk</b></a><br><br>
-                    
-
-                    <table id="datatable" href="/viewo" class="table table-striped" style="width:100%">
-                      
-                     
-
-                      <thead>
-                        <tr>
-                          <th></th>
-                          <th>Nama Produk </th>
-                          <th>Kategori </th>
-                          <th>Merek </th>
-                          <th>Status</th>
-                          <th>Action</th>
-                        </tr>
-                      </thead>
-
-
-                      <tbody>
-                      @foreach ($produk as $key => $value)
-                          <tr>
-                            <th>{{$value->produk_title}}</th>
-                            <th>{{$value->SKU}}</th>
-                            <th>{{$value->brand_title}}</th>
-                            <th>{{$value->is_var_available}}</th>
-                            <th></th>
-                          </tr>
-                      @endforeach
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
-            </div>
-        <!-- /page content -->
-
-@endsection
-
-
-@section('script')
-
-     <!-- jQuery -->
+    <!-- jQuery -->
     <script src="../assets/vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="../assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -145,21 +54,18 @@
     <script src="../assets/vendors/jszip/dist/jszip.min.js"></script>
     <script src="../assets/vendors/pdfmake/build/pdfmake.min.js"></script>
     <script src="../assets/vendors/pdfmake/build/vfs_fonts.js"></script>
-
+    
     <script>
         $(document).ready(function() {
         var table = $('#datatable').DataTable( {
-            scrollY:        "300px",
+            scrollY:        "400px",
             scrollX:        true,
             scrollCollapse: true,
             paging:         true,
-            fixedColumns:   true,
-            select: true
+            fixedColumns:   true
         } );
     } );
     </script>
 
     <!-- Custom Theme Scripts -->
- <script src="../assets/build/js/custom.min.js"></script>
-
-@endsection
+    <script src="../assets/build/js/custom.min.js"></script>

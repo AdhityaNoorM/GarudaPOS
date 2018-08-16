@@ -13,7 +13,6 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
-    <!-- Fix for bugged data table -->
     <link href="../assets/build/css/table-fix.css" rel="stylesheet">
 
     <!--data table-->
@@ -41,18 +40,18 @@
             <br><br>
             <div class="row">
               <div class="col-md-6 col-sm-12 col-xs-12">
-              
+
                 <div class="x_panel">
                   <!--table list produk-->
-                 
+
 
                   <div class="x_content">
 
                 <div class="row">
-                    
+
                       <!--table list produk-->
                        <table id="listproduk" class="table table-striped" style="width:100%; font-size:11px;">
-                        
+
             <thead>
                           <tr>
                             <th class="column-title">SKU</th>
@@ -64,30 +63,33 @@
 
                         <tbody>
                         @foreach ($produklist as $key => $value)
+
+
                         <tr>
-                          <th>{{$value->SKU}}</th>
-                          <th>{{$value->Produk_title}}</th>
-                          <th>{{$value->nama_varian}}</th>
-                          <th>{{$value->HARGA_JUAL}}</th>
+                          <td>{{$value->SKU}}</td>
+                          <td>{{$value->Produk_title}}</td>
+                          <td>{{$value->nama_varian}}</td>
+                          <td>{{$value->HARGA_JUAL}}</td>
                         </tr>
+
                           @endforeach
                             </tbody>
                           </table>
-                        
+
                       </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6 col-sm-12 col-xs-12">
-              
+
                 <div class="x_panel">
                      <h4 class="pull-left"><i class="fa fa-shopping-cart"></i> Keranjang Belanja</h4>
-                      
+
                       <button class=" btn btn-danger" style="float: right"><i class="fa fa-trash"></i>  Kosongkan Keranjang</button>
                   <!--table list produk-->
                   <div class="x_title">
-                    
+
                     <div class="clearfix"></div>
                   </div>
 
@@ -104,13 +106,13 @@
                             <th class="column-title">Harga Satuan</th>
                             <th class="column-title">Jumlah</th>
                             <th class="column-title">Subtotal</th>
-                            <th class="column-title">Action</th>                            
+                            <th class="column-title">Action</th>
                             </th>
                           </tr>
                         </thead>
 
                         <tbody>
-                        
+
                           <tr class="even pointer">
                             <td class=" ">ASUS ROG</td>
                             <td class=" ">Red</td>
@@ -529,25 +531,25 @@
                         </table>
 
                             <h3 style="float: left">Total Harga</h3>
-                            
+
                             <h3 style="text-align:right;float: right">Rp. 4.800.000.00,-</h3>
                           </div>
 
                       </div>
 
               </div>
-     
+
             <!--form diskon-->
             <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 pull-right">
-              
-                <div class="x_panel">
-                
 
-                    
+                <div class="x_panel">
+
+
+
                   <!--table list produk-->
                   <div class="x_title">
-                    
+
                     <div class="clearfix"></div>
                   </div>
 
@@ -573,16 +575,16 @@
                 </div>
 
                   </div>
-                      
-                  <!-- Bayar Modal -->    
-                  
+
+                  <!-- Bayar Modal -->
+
                   <a data-toggle="modal" data-target="#bayar" class="btn btn-primary btn-lg" style="width:100%; margin-bottom: 10%">BAYAR</a>
                       </div>
                       </div>
                     </div>
                   </div>
 
-                  </div>                  
+                  </div>
 
                       </div>
                     </div>
@@ -592,7 +594,7 @@
               </div>
             </div>
             </div>
-            </div>          
+            </div>
             </div>
           </div>
 
@@ -615,12 +617,12 @@
                                 </tr>
                               </thead>
                               <tbody>
-                                
+
                                 <tr>
                                   <td>Total Harga</td>
                                   <td colspan="2">Rp. 19.200.000,00,-</td>
                                 </tr>
-                                
+
                                 <tr>
                                   <td>Biaya Tambahan</td>
                                   <td colspan="2">Rp. 0,00,-</td>
@@ -644,12 +646,12 @@
                                 <tr>
                                   <td>Kembalian</td>
                                   <td colspan="2">Rp. 800.000,00,-</td>
-                                </tr>  
-                                                                
+                                </tr>
+
                               </tbody>
                             </table>
 
-                            
+
                           </div>
                           <div class="modal-footer">
                             <a data-target="#" data-dismiss="modal" class="btn btn-primary">Cetak Struk</a>
@@ -658,7 +660,7 @@
                         </div>
                       </div>
                   </div>
-                  
+
 
                   <!--modal kirim struk-->
                   <div class="modal" id="kirim_struk">
@@ -691,7 +693,7 @@
                         <div class="modal-content">
                           <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            
+
                           </div><div class="container"></div>
                           <div class="modal-body">
                             <!--form input email-->
@@ -740,12 +742,12 @@
     <script src="../assets/vendors/moment/min/moment.min.js"></script>
     <script src="../assets/vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
 
-    <script src="../assets/vendors/DateJS/build/snippet.js"></script> 
+    <script src="../assets/vendors/DateJS/build/snippet.js"></script>
 
     <!-- PNotify -->
     <script src="../assets/vendors/pnotify/dist/pnotify.js"></script>
     <script src="../assets/vendors/pnotify/dist/pnotify.buttons.js"></script>
-    <script src="../assets/vendors/pnotify/dist/pnotify.nonblock.js"></script> 
+    <script src="../assets/vendors/pnotify/dist/pnotify.nonblock.js"></script>
 
     <!-- bootstrap-progressbar -->
     <script src="../assets/vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
@@ -791,10 +793,10 @@
             "select": true
     });    });
 
-       
+
     </script>
 
-    
+
     <!-- Custom Theme Scripts -->
     <script src="../assets/build/js/custom.min.js"></script>
 
