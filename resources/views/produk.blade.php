@@ -69,11 +69,16 @@
                       <tbody>
                       @foreach ($produk as $key => $value)
                           <tr>
-                            <th>{{$value->produk_title}}</th>
-                            <th>{{$value->SKU}}</th>
-                            <th>{{$value->brand_title}}</th>
-                            <th>{{$value->is_var_available}}</th>
-                            <th></th>
+                            <td></td>
+                            <td>{{$value->produk_title}}</td>
+                            <td>{{$value->SKU}}</td>
+                            <td>{{$value->brand_title}}</td>
+                            <td>{{$value->is_var_available}}</td>
+                            <td>
+                            <a href=""><button type="button" class="btn btn-warning btn-sm" ><i class="fa fa-edit"></i> Update</button></a>
+                            <a href="detailproduk"><button type="button" class="btn btn-info btn-sm" ><i class="fa fa-eye"></i> View Detail</button></a>
+                            <a href=""><button type="button" class="btn btn-danger btn-sm" ><i class="fa fa-trash"></i> Delete</button></a>
+                          </td>
                           </tr>
                       @endforeach
                       </tbody>
