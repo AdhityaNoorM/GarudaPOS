@@ -10,15 +10,11 @@ use Illuminate\Database\Eloquent\Model;
  * @property User $user
  * @property Outlet $outlet
  */
-
-
- //test-push Adhitya//
-
 class bekerjaDi extends Model
 {
     /**
      * The table associated with the model.
-     *
+     * 
      * @var string
      */
     protected $table = 'bekerja';
