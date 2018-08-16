@@ -55,10 +55,11 @@
                       <tbody>
                       @foreach ($transaksi as $key => $value)
                       <tr>
-                        <th>{{$value->id_transaksi}}</th>
-                        <th>{{$value->nama_user}}</th>
-                        <th>{{$value->tanggal_transaksi}}</th>
-                        <th></th>
+                        <td>{{$value->id_transaksi}}</td>
+                        <td>{{$value->nama_user}}</td>
+                        <td>{{$value->tanggal_transaksi}}</td>
+                        <td></td>
+                        <td><a href="/transaksidetail"><button type="button" class="btn btn-info btn-sm" ><i class="fa fa-eye"></i> View Detail</button></a></td>
                       </tr>
                         @endforeach
                       </tbody>

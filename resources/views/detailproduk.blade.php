@@ -26,6 +26,12 @@
 
 @endsection
 
+@section('title')
+
+  <h1 style="margin:20px; font-size:20px; color:#EDEDED;">DETAIL PRODUK</h1>
+
+@endsection
+
 @section('content')
 
         <!-- page content -->
@@ -39,37 +45,8 @@
                   <div class="x_content"><br>
 				  <div class="row">
 				  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 				  <div class="col-md-6 col-sm-6 col-xs-12">
 					
-
-
-
-
-
-
 				  <!-- form produk-->
 				  <div class="col-md-12 col-sm-12 col-xs-12">
 					  <img class="img-responsive" src="{{asset('assets/images/img.jpg')}}" alt="Product Image" width="80%"> 				
@@ -106,48 +83,8 @@ RAM 2GB
 Memory Internal 12GB</td>
                                 </tr>
                               </thead>
-
                 </table>
-
-
 		      </div>
-	  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	  			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">  
 					<div class="table-responsive">
 						<br><table id="datatable" class="table table-striped" style="width:100%; font-size:11px;">
