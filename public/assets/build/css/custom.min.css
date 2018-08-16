@@ -4966,3 +4966,7 @@ ul.notifications {
 .right_col{
   min-height: 640px;
 }
+
+.fix-nav-sm{
+  min-height: 20px;
+}

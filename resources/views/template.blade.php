@@ -30,7 +30,7 @@
               <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                 <div class="menu_section">
                   <ul class="nav side-menu side-menu-sm">
-                    <li><a>
+                    <li><a href=" ">
                       <i class="fa fa-dashboard"></i> Dashboard </a></li>
 
 <!--dashboard sidebar-->
@@ -59,8 +59,8 @@
 
                     <li><a><i class="fa fa-archive"></i>Gudang<span class="fa fa-chevron-down"></span></a> <!-- gudang sidebar-->
                       <ul class="nav child_menu">
-                        <li><a href="general_elements.html">Pengelolaan Produk</a></li>
-                        <li><a href="media_gallery.html">Statistik Produk</a></li>
+                        <li><a href="produk">Pengelolaan Produk</a></li>
+                        <li><a href="statistikproduk">Statistik Produk</a></li>
                       </ul>
                     </li>
 
@@ -116,7 +116,7 @@
           <div class="top_nav">
             <div class="nav_menu">
               <nav>
-                <div class="nav toggle">
+                <div class="nav toggle fix-nav-sm">
                   <a id="menu_toggle"><i class="fa fa-bars"></i></a>
                 </div>
 			    <ul class="nav navbar-nav navbar-left">

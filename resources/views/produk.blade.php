@@ -16,6 +16,8 @@
      <!-- custom table (fixed) -->
     <link href="css/custom_table.css" rel="stylesheet">
 
+    <link href="../assets/build/css/table-fix-large.css" rel="stylesheet">    
+
     <!--data table-->
     <link href="https://cdn.datatables.net/select/1.2.6/css/select.dataTables.min.css" rel="stylesheet" >
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">

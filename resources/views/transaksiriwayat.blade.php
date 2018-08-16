@@ -13,6 +13,8 @@
     <!-- bootstrap-daterangepicker -->
     <link href="../assets/vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
 
+    <link href="../assets/build/css/table-fix-large.css" rel="stylesheet"> 
+
     <!-- Custom Theme Style -->
     <link href="../assets/build/css/custom.min.css" rel="stylesheet">
 
